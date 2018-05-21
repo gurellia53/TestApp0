@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context=".MainActivity"
+            tools:showIn="@layout/activity_main">
+
+            <Button
+                android:id="@+id/button_calc"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Calculate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_y3" />
+
+            <EditText
+                android:id="@+id/txt_W"
+                android:layout_width="210dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="48dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txt_w"
+                android:layout_width="210dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                app:layout_constraintStart_toStartOf="@+id/txt_W"
+                app:layout_constraintTop_toBottomOf="@+id/txt_W" />
+
+            <EditText
+                android:id="@+id/txt_R"
+                android:layout_width="210dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                app:layout_constraintStart_toStartOf="@+id/txt_w"
+                app:layout_constraintTop_toBottomOf="@+id/txt_w" />
+
+            <EditText
+                android:id="@+id/txt_A_tsa"
+                android:layout_width="210dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                app:layout_constraintStart_toStartOf="@+id/txt_R"
+                app:layout_constraintTop_toBottomOf="@+id/txt_R" />
+
+            <EditText
+                android:id="@+id/txt_S"
+                android:layout_width="210dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                app:layout_constraintStart_toStartOf="@+id/txt_A_tsa"
+                app:layout_constraintTop_toBottomOf="@+id/txt_A_tsa" />
+
+            <EditText
+                android:id="@+id/txt_k"
+                android:layout_width="210dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                app:layout_constraintStart_toStartOf="@+id/txt_S"
+                app:layout_constraintTop_toBottomOf="@+id/txt_S" />
+
+            <EditText
+                android:id="@+id/txt_u"
+                android:layout_width="210dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                app:layout_constraintStart_toStartOf="@+id/txt_k"
+                app:layout_constraintTop_toBottomOf="@+id/txt_k" />
+
+            <EditText
+                android:id="@+id/txt_o"
+                android:layout_width="210dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                app:layout_constraintStart_toStartOf="@+id/txt_u"
+                app:layout_constraintTop_toBottomOf="@+id/txt_u" />
+
+            <EditText
+                android:id="@+id/txt_y1"
+                android:layout_width="210dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                app:layout_constraintStart_toStartOf="@+id/txt_o"
+                app:layout_constraintTop_toBottomOf="@+id/txt_o" />
+
+            <EditText
+                android:id="@+id/txt_y2"
+                android:layout_width="210dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                app:layout_constraintStart_toStartOf="@+id/txt_y1"
+                app:layout_constraintTop_toBottomOf="@+id/txt_y1" />
+
+            <EditText
+                android:id="@+id/txt_y3"
+                android:layout_width="210dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                app:layout_constraintStart_toStartOf="@+id/txt_y2"
+                app:layout_constraintTop_toBottomOf="@+id/txt_y2" />
+
+            <EditText
+                android:id="@+id/txt_F_extraction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button_calc"
+                app:layout_constraintTop_toTopOf="@+id/button_calc" />
+
+            <TextView
+                android:id="@+id/tv_W"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="W"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_W"
+                app:layout_constraintEnd_toStartOf="@+id/txt_W" />
+
+            <TextView
+                android:id="@+id/tv_w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="w"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_w"
+                app:layout_constraintEnd_toStartOf="@+id/txt_w" />
+
+            <TextView
+                android:id="@+id/tv_R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="R"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_R"
+                app:layout_constraintEnd_toStartOf="@+id/txt_R" />
+
+            <TextView
+                android:id="@+id/tv_A_tsa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="A tsa"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_A_tsa"
+                app:layout_constraintEnd_toStartOf="@+id/txt_A_tsa" />
+
+            <TextView
+                android:id="@+id/tv_S"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="S"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_S"
+                app:layout_constraintEnd_toStartOf="@+id/txt_S" />
+
+            <TextView
+                android:id="@+id/tv_k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="k"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_k"
+                app:layout_constraintEnd_toStartOf="@+id/txt_k" />
+
+            <TextView
+                android:id="@+id/tv_u"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="μ"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_u"
+                app:layout_constraintEnd_toStartOf="@+id/txt_u" />
+
+            <TextView
+                android:id="@+id/tv_o"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="φ"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_o"
+                app:layout_constraintEnd_toStartOf="@+id/txt_o" />
+
+            <TextView
+                android:id="@+id/tv_y1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="y1"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_y1"
+                app:layout_constraintEnd_toStartOf="@+id/txt_y1" />
+
+            <TextView
+                android:id="@+id/tv_y2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="y2"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_y2"
+                app:layout_constraintEnd_toStartOf="@+id/txt_y2" />
+
+            <TextView
+                android:id="@+id/tv_y3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="y3"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_y3"
+                app:layout_constraintEnd_toStartOf="@+id/txt_y3" />
+
+
+            <TextView
+                android:id="@+id/tv_W_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:text="lb"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_W"
+                app:layout_constraintStart_toEndOf="@+id/txt_W" />
+
+            <TextView
+                android:id="@+id/tv_w_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:text="lbs/ft/ft/ft"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_w"
+                app:layout_constraintStart_toEndOf="@+id/txt_w" />
+
+            <TextView
+                android:id="@+id/tv_R_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:text="ft"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_R"
+                app:layout_constraintStart_toEndOf="@+id/txt_R" />
+
+            <TextView
+                android:id="@+id/tv_A_tsa_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:text="ft*ft"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_A_tsa"
+                app:layout_constraintStart_toEndOf="@+id/txt_A_tsa" />
+
+            <TextView
+                android:id="@+id/tv_S_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:text="ft*ft"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_S"
+                app:layout_constraintStart_toEndOf="@+id/txt_S" />
+
+            <TextView
+                android:id="@+id/tv_k_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:text="dl"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_k"
+                app:layout_constraintStart_toEndOf="@+id/txt_k" />
+
+            <TextView
+                android:id="@+id/tv_u_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:text="dl"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_u"
+                app:layout_constraintStart_toEndOf="@+id/txt_u" />
+
+            <TextView
+                android:id="@+id/tv_o_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:text="dl"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_o"
+                app:layout_constraintStart_toEndOf="@+id/txt_o" />
+
+            <TextView
+                android:id="@+id/tv_y1_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:text="ft"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_y1"
+                app:layout_constraintStart_toEndOf="@+id/txt_y1" />
+
+            <TextView
+                android:id="@+id/tv_y2_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:text="ft"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_y2"
+                app:layout_constraintStart_toEndOf="@+id/txt_y2" />
+
+            <TextView
+                android:id="@+id/tv_y3_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:text="ft"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_y3"
+                app:layout_constraintStart_toEndOf="@+id/txt_y3" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
